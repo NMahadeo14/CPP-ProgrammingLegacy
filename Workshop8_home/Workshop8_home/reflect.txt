@@ -1,0 +1,43 @@
+Devin Mahadeo
+160611174
+Workshop 8 reflection 
+
+1. What is the difference between an abstract base class and a concrete class?
+
+The difference is that a concrete class can be instantiated because it provides 
+(or inherits) the implementation for all of its methods. An abstract class cannot
+be instantiated because at least one method has not been implemented. Abstract classes
+are meant to be extended.
+
+2. Take a look to the main module - how is it possible that this module can work with
+chequing and savings accounts but doesn't know about the SavingsAccount or ChequingAccount
+classes?
+
+I think that the main module is able to work because the iAccount is being included 
+and the createAccount prototype is that file so in the main module the file is able to 
+get the implementation it needs from the Chequing and Savings through their cpp files which are
+accessed through the iAccount file which the main knows about.
+
+3. Note that interface has a destructor, even if it doesnt store any attributes.
+why is that destructor necessary?
+
+Since its a pure virtual function its taking up some dynamically allocated memory
+the destructor will take care of that.
+
+4. In the context of a hierarcy of classes, what is the difference between overloading,
+overriding and shadowing?
+
+Shadowing: A member function of a derived class shadows the base class member
+function with the same identifier
+Overriding: redefinition of a base class function in its derived class with same
+signiture
+Overloading:Allows you to specify more than one definition for a function name
+or an operator in the same scope. 
+
+Quiz 8 Reflection
+
+1. static_cast,reinterpret_cast,const_cast,dynamic_cast
+3. The difference is that a concrete class can be instantiated because it provides 
+(or inherits) the implementation for all of its methods. An abstract class cannot
+be instantiated because at least one method has not been implemented. Abstract classes
+are meant to be extended.

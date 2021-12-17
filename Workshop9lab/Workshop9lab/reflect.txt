@@ -1,0 +1,48 @@
+Devin Mahadeo
+160611174
+Workshop 9 Reflection
+
+1. What happens if you try to put your template functions in the Data.cpp?
+Does your source code compile of you move all the functions to Data.h?
+
+For this question my code was compiling but because the template class definitions 
+are in the header nothing happens and it is also unable to access the csv file.
+but when the implementation is in the header with the header definitions the code also
+compiles and it run as its supposed to.
+
+2. Move one template function in ws9_lab.cpp. Does it work now? Do you need to define the 
+template function above main(), before it is used, or can you define it below main()?
+
+No, when i move the function into the ws9_lab.cpp it still doesnt compile and even after i define the template 
+function above main(), before it is used, or after its defined below the main()? it still doesnt compile and work
+the code seems to only work when the template functions are defined in the header file in the namespace that is 
+specified.
+
+3. Could you have done this lab without templates, by just overloading your functions in Data.h to accept intergers and double arguments?
+what is the advantages of using templates? 
+
+Yes im pretty sure that if i could ave completed the function by making overloaded functions that can accept integer
+and doubles, but the advantages of using template functions, Template functions are a feature of the C++ programming
+language that allows functions and classes to operate with types. this allows a function or class to work on many different 
+data types without being rewritten for each one.
+
+4. What is the difference between template<class T> and template<typename T>?
+
+According to the notes the 2 declarations Template<class T> and Template<typename T> are equivalent to one another
+and the compiler replaces T with the Argument specified by the Client Code.
+
+5. What have you learned doing this workshop
+
+ive learned how to use templates in my code to be efficient when coding to save me time and another method of getting
+code done when i need to finish workshops or milestones. it showed me that compared to all the code ive learned throughout
+the semester there is still alot of other concepts to be used it c++ and other ways of doin previous made code that i can
+now go back to and try again using these methods to further develope my skills as a coder which will benefit me later 
+when i need to 
+
+Quiz 9 Reflection 
+
+1. line 4 cast operator convert student to double
+line 7 += that accepts a double as first operand student as second operator
+2. line 4 copy constructor
+line 7 += overload
+line 9 destructor, copy constructor for return by value
