@@ -1,0 +1,48 @@
+NAME: Devin Mahadeo
+STUDENT NUMBER: 160611174
+WORKSHOP 5
+
+REFLECTION
+
+1. The operator+ returns a Fraction object. Explain why this operator should not return a reference to a Fraction object
+(like operator+=).
+
+The operator should not return a reference to a Fraction object because when a function returns a reference, it returns
+an implicit pointer to its return value In the case of returning to a Fraction object, if the value wasnt returned back 
+to the object the value would not change for the object after the operator takes place, also by doing this and returning
+by object we are able to reset the value of the object everytime to process new operations.
+
+2. List the temporary objects in the tester module (the temporary objects are those that have no name and are removed from 
+memory immediately after their creation; put messages in the constructors/destructors to reveal them).
+
+I think that the Temporary object that is in the tester module is B from what i got when i tried to add messages in the contructor
+i saw that when the code got to creating the object of B the message showed before it was created and right after the message popped
+up which means it was created and destroyed right after creation.
+
+3. List the simplifications that you made to your class to minimize duplication.
+
+I didnt make much simplifications in the class itself because i wasnt sure how i could code the operators so that i wasnt just repeating
+the same lines over and over again, but in the function definitions i made changes to operator+= so that i wasnt just repeating operator+
+again, and i tried not to make the function definitions too complictated in terms of how the calculations take place.
+
+QUIZ REFLECTION 
+
+1. Explain what is the difference between deep copy and shallow copy of an instance of custom types?
+
+Deep copy dupicates the resources as well as the data for an object whereas shallow only copies the data of a object.
+
+3. In one or two sentences, explain what free helper funtions are.
+
+A free helper function is a function that obtains all of its information from the public member functions of the class that it supports.
+a free helper function does not require access to the private members of its class.
+
+FINAL THOUGHTS
+
+I think that im slowly getting alot better at coding and considering how easy this workshop was for me, it makes me happy to see that im 
+progressing steadly, this is the last workshop im going to be writing before the midterm and im feeling pretty confident in myself that i 
+can do well in it, and with the reference sheet i should be fine with any little things that i mix up or forget, im hoping to get a better
+mark in this class then i did in C and i feel like its very possible this time so hopfully i can come through on this midterm.
+
+
+
+

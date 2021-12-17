@@ -1,0 +1,39 @@
+Name: Devin Mahadeo
+Student Number: 160611174
+Workshop 4
+Reflection
+1) What is a empty state? Could you define another state as the safe empty state?
+
+An empty state is what an objects instance variable is set to in a constructor at the start of runtime
+variable stay in this empty state until set to another value by a function. You cannot define another state
+as the empty state because this can create garbage and give undefined values when trying to run code which can 
+produce errors that can become problematic depending on how long the code you are running is.
+
+2)Describe how you have minimized code duplication.
+
+I used the constructor again whenever i saw it possible to show that i was setting variables back to an empty 
+state or whenever i was showing for if statements, if variable were in an empty state that other variables would be set
+another way or values would be returned to other variables. i also used function calls wherever i could when the process
+that needed to be done was also being carried out by functions.
+
+3)Explain why canTravelWith(...) member function can access the private data of the object referenced in its parameter.
+
+we can access the private data with the member function canTravelWith(...) because within this function we use the THIS operator
+which allows us to refer to the current object itself which in this case would be Travler, where we have access to all the public and 
+private data, we gain access to the complete set of instance variables that the member function is currently accessing through its implict
+parameters.
+
+QUIZ 4 REFLECTION
+
+1.) What are Free Helper Funtions?
+
+A free or loosely coupled helper function is a function that obtains all of its information from the public member functions of the class that 
+it supports. a free helper function does not require access to the private members of its class.
+
+
+FINAL REFLECTION 
+
+This workshop was probably my best one yet in terms of understanding, but i still end up coming into contact with errors that are small but cause me
+lots of problems, one thing that i should have brought up from previous workshops is, overloading, i dont understand the purpose or what we are doing when 
+we say we are overloading in the code. Other then that i feel like i got throught this workshop realitivly easy and i hope that i can continue with this improvement
+and complete future workshops the same way. 
