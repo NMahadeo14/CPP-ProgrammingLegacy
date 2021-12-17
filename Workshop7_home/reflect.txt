@@ -1,0 +1,46 @@
+/*
+NAME: Devin Mahadeo
+STUDENT No: 160611174
+CLASS: SSB
+*/
+
+Workshop 7 Reflection
+
+1. Does the Hero Class need to know about the existence of the SuperHero Class?
+
+No the Hero class does not need to know about the SuperHero class because the Hero 
+Class is the base class and the SuperHero class is being derived from it so there is no
+use of using or calling the SuperHero class in the Hero.cpp function and also it isn't 
+found even if the SuperHero class was attempted to be used.
+
+2. Does the SuperHero class need to know about the existence of the Hero Class?
+
+Yes the SuperHero Class needs to be know about the existence of the Hero Class
+because the SuperHero class is being derived from the Hero Class and without it 
+knowing about it the SuperHero class would not be able to use certain function calls
+and use some instance variables.
+
+3. The program prints out "Ancient Battle!" when 2 heroes fight. It prints out 
+"Super Fight!" when 2 SuperHeroes fight. When you tried to make a Hero fight a 
+SuperHero, what did it print out?
+
+When i tried to make the code print for a Hero fight a SuperHero, the output displayed
+"Ancient Battle!" as it is supposed to be because of the expected output, but at
+initial reading look i would think that it would have displayed the message 
+"Ancient Super Fight!" but it was never instructed in the code to display this message.
+
+Quiz 7 Reflection
+
+1. Explain what polymorphism is, one of the main characteristics of OOP.
+
+Polymorphism in OO programming is a single interface provides multiple implementations
+
+2. Explain the difference between early binding and late binding?
+
+Early binding - based on the objects static type. determine in compile time.
+Late binding - based on the objects dynamic type. Determine on run time.
+
+3. By default, a C++ class doesnt inherit the constructor from the base class,
+How can we request to inherit consturctors
+
+Using Base::Base

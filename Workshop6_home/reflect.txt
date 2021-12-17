@@ -1,0 +1,56 @@
+/*
+Name: Devin Mahadeo
+Student number: 160611174
+Email: Dmaahdeo2@myseneca.ca
+Workshop: 6
+Section: B
+Date: March 8, 2019
+*/
+
+Reflection Questions
+
+1. Why does the copy assigment operator check for self-assignment before doing anything else?
+if it doesn't do this test, what could go wrong?
+
+The reason the operator does a self check first is because when the address of the current object to the address of the 
+source object match the logic of the assignment is skipped altogether, if the self check is neglected the deallocation
+statement would release the memory holding the resource data and we would lose access to the source resource resulting 
+in our logic failing when the source is being copied to the current.
+
+2. What must you do in the copy constructor before calling the copy assigment operator? Explain why it is necessary.
+
+You must set the current object to null or and empty state in the copy constructor, this is necessary because this ensures
+that the assignment does not deallocate any memory if it is called on by the copy constructor.
+
+3. Explain why the parameter of the copy constructor must be sent by reference and not by value (modify your code to send by
+value and explain the result).
+
+When we create our own copy constructor, we pass an object by reference and we generally pass it as a const reference. 
+So the compiler creates a temporary object which is copied to another temporary object using copy constructor in the 
+original program (The temporary object is passed as an argument to copy constructor). if it was passed by value the
+contructor would continuously call itself till it ran out of memory.
+
+Quiz 6 Relection
+
+1. Explain what inheritance is, one of the main characteristics of OOP.
+
+Inheritance takes the entire structure of other class and creates a new class
+
+2.By default, a derived class inherits members from the base class, but not all of them. 
+Which members of the base class are not inherited?
+
+Constructor, destructor, and copy assignment operator
+
+3.In the context of inheritance and member functions, explain what shadowing is.
+
+Shadowing refers to creating in a derived class with the same name in the base class.
+
+Personal Reflection
+
+Its hard to gauge where i am in this course because of how i did on the midterm, my mark was dropped on the walkthrough
+portion even though i know what i was doing, i messed the numbers that why i did bad, this workshop was difficult, more 
+the others and i find myself lost in this class or completely understanding so im not really sure how things are going for me
+but i definiately know that im improving, im continuing to work hard in this course as i view it as my most important and i am working 
+hard to do better on the exam then on the midterm.
+
+

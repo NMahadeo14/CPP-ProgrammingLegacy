@@ -1,0 +1,8 @@
+﻿  Contact.cpp
+c:\users\devin\source\repos\workshop6_home\workshop6_home\contact.cpp(149): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+c:\users\devin\source\repos\workshop6_home\workshop6_home\contact.cpp(153): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+c:\users\devin\source\repos\workshop6_home\workshop6_home\contact.cpp(157): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+c:\users\devin\source\repos\workshop6_home\workshop6_home\contact.cpp(161): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+  w6_at_home.cpp
+  Generating Code...
+  Workshop6_home.vcxproj -> C:\Users\devin\source\repos\Workshop6_home\Debug\Workshop6_home.exe
