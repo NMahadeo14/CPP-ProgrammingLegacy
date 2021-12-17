@@ -1,0 +1,41 @@
+NAME: Devin Mahadeo
+STUDENT NUMBER: 160611174
+EMAIL: Dmahadeo2@myseneca.ca
+
+1) What type have you selected for the ISBN? Explain your reasoning.
+
+I selected the type "long long" for my ISBN because the ISBN was a big interger of numbers and a regular int occupies
+4 bytes, and for the size of the ISBN the value that needed to be stored needed to contain at least 64 bits or 8 bytes
+so that the program could have enough memory to hold the value of the ISBN.
+
+2)For the at-home portion you had to change the logic that validates an ISBN. How would you design you class in such a
+way that if a new update the the validation logic is necessary, you dont have to change anything in the function Book::set(...)?
+
+One way i think i could design my class so that i dont have to change anything in Book::set() is by changing the limits of the 
+ISBN and Names's sizes cause even though the size of the number changes the set() function would still use the same process 
+to check if the number was a valid ISBN and carry out the program the same way it worked in this workshop.
+
+QUIZ 3
+
+3) In C++, some of the member functions are Queries. Explain what is a query and how do we create one.
+
+Queries are also called accessor methods and it reports the state of the object. To create a query you can use the
+const qualifier to show member functions as a query. This doesnt change the state of the object in anyway, which means 
+that this query cannot change the value of numbers or any other values depending on the parameters of the function, that 
+are included with the const.
+
+Final thoughts on the Workshop
+
+I really struggled with the understanding of this workshop because even though i did read the notes, when it came to actually 
+putting the notes into code, i found it hard to code the work correctly, so i was getting errors in terms of all my spaces being 
+empty, or spacing issues with the cout.(ios::right,left)(fixed) and other built in functions that had to be used. due to messing
+with these i began to get frustrated with my code, because even though it was working it wasnt all correct and i didnt know how to
+fix that, i found the modulus part of the workshop the most challenging even though i understand it, and im slowly picking up how to 
+code better and alot faster, im going to try to ask question to you during lab time and see if i can get you to explain some concepts
+to me that i dont understand. One downside is that im not learning an picking things up fast enough and when it comes to the workshop
+im struggling to figure out how to do it just like last semester, and i need to get past this and im going to continue to work toward 
+getting better at these
+
+
+
+

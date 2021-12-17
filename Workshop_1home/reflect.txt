@@ -1,0 +1,38 @@
+1. The purpose of namespaces and header files,
+Namespaces are used as declaratives, that provide a score to the identifiers inside it
+they are used to organize code into groups to prevent errors that can occur when code includes
+multiple libraries. Header files provide function prototypes, and definitions for functions
+that are used in C++ and C programms. 
+2. Why should header files not be compiled,
+Only the source code in the cpp files are compiled by the complier, when putting a function 
+definition into the .h file you dont include the .h file definition in the main.cpp file and it 
+isnt compiled by the compiler as the preprocessor doesnt include it in the main.cpp file
+3.Why you should never include .cpp files in another file,
+If you include .cpp files in other files you are just creating a one large file rather then 
+the spliting up of the code that you would be doing if you were to include header file in .cpp 
+files, what this does is affects the code from the preprocessor before the compiler recieves it 
+and even though the code may run just fine, depending on the size of code you are trying to compile
+if you make this mistake your code can go from taking seconds to compile to taking large amounts of 
+time, and if after you were to compile this code and you had an error on only one line, you would
+have to fix this error and then wait hours again to compile and see if the problem was fixxed. 
+Quiz 1 Reflection
+2. What is memory leak,
+Memory leak occurs if an application loses the address of dynamically allocated memory before that memory
+has been deallocated, this can occur when the pointer to dynamic memory goes out of scope before the application
+deallocates that memory, pointer to dynamic memory changes its value before the application deallocated the memory
+starting at the address stored in that pointer
+3. What is a reference,
+A reference is an alias for a variable or object. a reference in a function call passses the variable or object rather
+than a copy. reference is an alternative to the pass by address mechanism available in the c language. 
+Personal Experience with the Workshop,
+From past workshops that ive done this one was very easy, but i know that it was also the first one of the 
+semester so i wasnt expecting it to be anything that big, this class in general already seems to be going better then 
+the forst semester one because when i first started i had no background in programming at all but since i have some 
+from the C programming class i was more prepared for what you were gonna teach and make us do, in terms of things that i
+studied, i understood everything that i read even thought my quiz mark was less then i expected and as for applying it to the
+workshop thats where i struggled a little cause i didnt really see where anything i read applied to much,
+one thing i like about this class so far is that you decicded to show us how to use breakpoints and debug, something we were not shown 
+in the first semester, which would have helped me so much and i thank you for that, because of this i feel like i will have a dramatically easier
+time thoughout the semester when doing workshops and trying to figure out whats happening in my code when im getting errors and dont know where the problem is 
+occuring from. im really excited to learn more this class and fully understand C++ programming to exceed what i did last semester, and i will try my hardest to achieve
+this goal.

@@ -1,0 +1,54 @@
+Name: Devin Mahadeo
+Student No: 160611174
+Email: Dmahadeo2@myseneca.ca
+Workshop 2
+Section B
+Date: January 25, 2019
+
+1. Why do you need to allocate new dynamic memory for the entire array of dynamically allocated
+memory? why not allocated memory only for the new element?
+
+In the at-home part of this workshop new dynamic memory for the the entire array needs to be allocated
+because at the point where data was previously allocated (being pPhones) memory was already allocated dynamically.
+The first allocation of memory process happends when the amount of memory that is being recieved is the user entered
+value while the program is running. If the value is changed in the array before deallocating and reallocating memory
+this can potentially cause a memory leak to occur, so i made a seperate variable called pPhones2 and allocated memory 
+to this variable that would allow me to add additional members to the program, then transfered elements from the first
+phones to the new one, deallocated from the old one and delete it and then have the additional phone in the new pPhones2,
+then copy the data from pPhones2 back to the original for the sake of the cpp file so that it isnt altered.
+
+2. The CellPhone structure stores the model of the cellphone in an array of characters. At the end of the program,
+we do not use the delete operator to deallocate the memory occupied by the model. Why don't we need to use the delete
+operator on this array itself? Explain and compare with the array of cellphones.
+
+CellPhone is the pointer that memory is being deallocated at the end, the delete operator is not used on the model array
+because the memory that is recieved by the struct CellPhone, shares model of the cellphone, because of this when the Cellphone
+pointer is being deallocated at the end, the array of the model would also deallocate. it would be deallocated because m_model
+is linked by the struct and the pointer, pPhones is the identifier of the struct, so the structure will deallocate.
+
+3) There are two display(...) function definitions. How does the compiler know whcih definition to call from your main function?
+
+This display funtion that was made in the at-home has parameters that recieve an address of an unmodifiable array of CellPhone
+object. The purpose of this function is display the models and prices the client entered and display by the linker in the compliation
+stage which will check both functions when it is called and check the arguments to see that they are being passed to the functions where
+where they are vaild and if this is the case and checks the parameters, this shows the strength of the C++ complier and that it has the 
+ability to spot the difference between two functions by their identifiers, and parameter types. 
+
+
+This workshop was difficult for me at first because i couldnt remember how to do alot of the initializing/declaring
+of pointers and then when i did remember how to do that i had to apply content that was just learned, that even though
+i understand i didnt know how to apply when i was actually writing code, and this made it harder for me cause i had to apply
+it to a .cpp file that was already made by you, so i found it hard to understand what was happening at certain times so 
+that i would know what i was supposed to code or how i was supposed to do it. Now at the end of the Workshop i can honestly 
+say that i still dont completey understand how to use the memory allocation at times but im working to understand it completely
+and maybe set aside time to work 1 on 1 with you to understand because i work better this way.
+
+Quiz 2 Reflection
+
+1. I got the first question on this quiz wrong because my mind blanked and i was caught off guard by a question that wasnt 
+in the chapter i was reading which is my bad, i knew 2 of three stages of complation but wasnt sure if the answer i put down 
+was also related to compilation so i put down the wrong answer instead of going with what i should have. other then that i understood classes and structs
+and their differencs and the private and public operators. 
+
+
+
